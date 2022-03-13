@@ -116,3 +116,10 @@ if(LIBIGL_TUTORIALS_CHAPTER7)
     igl_add_tutorial(721_VectorFieldSmoothing igl::glfw)
     igl_add_tutorial(722_VectorParallelTransport igl::glfw)
 endif()
+
+
+# geometric tools for peridyno
+igl_add_tutorial(peri_sample igl::glfw igl_copyleft::cgal)
+igl_copy_dll(peri_sample)
+
+igl_add_tutorial(peri_tetview igl::glfw)
